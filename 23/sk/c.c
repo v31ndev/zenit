@@ -22,5 +22,6 @@ int main(void) {
         printf("%d\n", sum - vstupy[i]);
     }
     
+    free(vstupy);
     return 0;
 }
