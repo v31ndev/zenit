@@ -3,6 +3,7 @@
 ## ENG
 
 This repository is a dump/archive (call it what you like) of my solutions for the tasks from slovak programmers competition "Zenit" of Correspondence Seminar of Programming.
+All solutions are (and will be) written in the **C programming language**.
 
 > I will try to make these solutions pass all test sets in all tasks/submits.
 > If that's not the case, I will comment it in the corresponding file and try to fix it later.
@@ -13,6 +14,7 @@ Feel free to take inspiration from these scripts, play around with them, or chec
 ## SVK
 
 Tento repozitár je moje skladisko/archív (nazvite to ako chcete) riešení pre úlohy zo slovenskej programátorskej súťaže Zenit **K**orešpondenčného **S**eminára z **P**rogramovania.
+Všetky riešenia sú (a budú) napísané v **jazyku C**.
 
 > Pokúsim sa, aby všetky tieto riešenia prešli všetkými testovacími sadami príslušných úloh.
 > Ak to tak nebude, upozorním na to v kóde danej úlohy komentárom a prípadne to neskôr opravím.
