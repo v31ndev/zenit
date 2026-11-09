@@ -1,19 +1,16 @@
-/*
-*   // TODO: ONLY 60% SUCCESS RATE
-*/
-
 #include <stdio.h>
 #include <ctype.h>
 #include <stdbool.h>
+#include <string.h>
 
-bool ecvValid(char vstup[8]) {
-    if(!(isalpha(toupper(vstup[0])) || isalpha(toupper(vstup[0])))) {
+bool ecvValid(char vstup[7]) {
+    if(!((isalpha(vstup[0]) && isupper(vstup[0])) && (isalpha(toupper(vstup[1])) && isupper(vstup[1])))) {
         return false;
     }
-    if(!(isdigit(vstup[3]) || isdigit(vstup[4]) || isdigit(vstup[5]))) {
+    if(!(isdigit(vstup[2]) && isdigit(vstup[3]) && isdigit(vstup[4]))) {
         return false;
     }
-    if(!(isalpha(toupper(vstup[6])) || isalpha(toupper(vstup[7])))) {
+    if(!((isalpha(vstup[5]) && isupper(vstup[5])) && (isalpha(vstup[6]) && isupper(vstup[6])))) {
         return false;
     }
 
@@ -24,7 +21,7 @@ int main(void) {
 
     char vstup[50];
     scanf("%s", vstup);
-    if(vstup[7] != '\0') {
+    if(strlen(vstup) != 7) {
         printf("Nie\n");
         return 0;
     }
